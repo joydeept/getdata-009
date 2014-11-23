@@ -5,6 +5,7 @@ The tidy data set in this project was derived from the raw data set that comes f
 ## Data
 
 The tidy data set contains the following columns:
+
 1. Subject - numbers 1-30.
 2. Activity - represented by six labels: WALKING
 , WALKING_UPSTAIRS
@@ -19,6 +20,7 @@ The tidy data set contains the following columns:
 ## Transformations
 
 The tidy data set was derived from the raw data set after the following transformations were performed on the raw data:
+
 1. Subject - no transformations. It contains the same identifies used in the raw data.
 2. Activity - the activity numeric identifiers in the raw data are replaced by the actual text labels.
 3. Measurement - only the columns containing mean and standard deviation measurements were extracted from the raw data. 
