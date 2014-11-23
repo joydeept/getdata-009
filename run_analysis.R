@@ -104,7 +104,7 @@ tidy_data <- function () {
   ###
   ### I want the final tidy set to look like:
   ###
-  ### SUBJECT   ACTIVITY    MEASUREMENT   MEAN    STD_DEV
+  ### SUBJECT   ACTIVITY    MEASUREMENT   MEAN
   ###
   ###
   ###
@@ -117,7 +117,7 @@ tidy_data <- function () {
   data_set %>%
     gather(Measurement, Value, -(c(Subject, Activity))) %>%
     group_by(Subject, Activity, Measurement) %>%
-    summarize(Mean = mean(Value), StdDev = sd(Value))
+    summarize(Mean = mean(Value))
   
   ### !!! So easy to do it this way!
   ###
